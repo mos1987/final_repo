@@ -2,6 +2,8 @@ FROM nginx:latest
 
 RUN apt-get update -y
 
+RUN yum update -y
+
 COPY ./index.html /var/www/html
 
 EXPOSE 80
